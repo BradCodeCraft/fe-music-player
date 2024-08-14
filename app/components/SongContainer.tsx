@@ -1,10 +1,12 @@
 import React from "react";
 import albumCover from "../assets/albumCover.jpeg";
 import Image from "next/image";
+import SongControl from "./SongControl";
+import SongProgress from "./SongProgress";
 
-export default function Container() {
+export default function SongContainer() {
   return (
-    <div className="fixed -z-40 min-w-full min-h-screen flex justify-center items-center">
+    <div className="fixed z-50 min-w-full min-h-screen flex justify-center items-center">
       {/* Container Background */}
       <div className="fixed -z-40 bg-transparent opacity-100 min-w-[80%] min-h-[80vh]">
         <div className="bg-black opacity-50 min-w-full min-h-[15vh] rounded-t-2xl" />
@@ -24,8 +26,13 @@ export default function Container() {
 
         <h2 className="text-gray-500 mt-5">Treeline Music</h2>
 
+        {/* Breaker */}
+        <div className="h-[500px]" />
+
         {/* Controls Row */}
-        {/* <SongControl /> */}
+        <SongControl />
+
+        <SongProgress />
       </div>
     </div>
   );

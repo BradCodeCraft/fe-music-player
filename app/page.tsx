@@ -1,7 +1,6 @@
 import Image from "next/image";
 import albumCover from "./assets/albumCover.jpeg";
-import { Children } from "react";
-import Container from "./components/Container";
+import SongContainer from "./components/SongContainer";
 
 export default function Home() {
   return (
@@ -14,7 +13,7 @@ export default function Home() {
         style={{ transform: "scale(1.1)" }}
       />
 
-      <Container></Container>
+      <SongContainer />
     </div>
   );
 }
